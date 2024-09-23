@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63d9a159-3c29-413c-bf01-f8223ec2473e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/controller/AngularForwardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/controller/AngularForwardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/Sensor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +103,7 @@
       <workItem from="1727029137496" duration="3096000" />
       <workItem from="1727032327217" duration="29000" />
       <workItem from="1727074022522" duration="23000" />
-      <workItem from="1727081182707" duration="956000" />
+      <workItem from="1727081182707" duration="1862000" />
     </task>
     <servers />
   </component>
