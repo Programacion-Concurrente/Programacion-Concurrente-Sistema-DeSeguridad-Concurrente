@@ -1,8 +1,8 @@
-package programacion_concurrente.sistema_de_seguridad_concurrente.BackEnd.PantallaMonitoreoSensores;
+package programacion_concurrente.sistema_de_seguridad_concurrente.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import programacion_concurrente.sistema_de_seguridad_concurrente.BackEnd.PantallaMonitoreoSensores.SensorMonitorDTO;
+import programacion_concurrente.sistema_de_seguridad_concurrente.model.SensorMonitorDTO;
 import programacion_concurrente.sistema_de_seguridad_concurrente.repos.SensorMovimientoRepository;
 import programacion_concurrente.sistema_de_seguridad_concurrente.repos.SensorTemperaturaRepository;
 

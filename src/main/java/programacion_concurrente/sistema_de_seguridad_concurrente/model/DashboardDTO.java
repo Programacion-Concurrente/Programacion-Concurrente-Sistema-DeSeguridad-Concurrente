@@ -1,18 +1,17 @@
-package programacion_concurrente.sistema_de_seguridad_concurrente.BackEnd.PantallaMonitoreoSensores;
-
-import java.time.OffsetDateTime;
+package programacion_concurrente.sistema_de_seguridad_concurrente.model;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.OffsetDateTime;
+
 @Getter
 @Setter
-public class SensorMonitorDTO {
-
+public class DashboardDTO {
     @NotNull
-    private Integer idSensor;
+    private Integer sensorId;
 
     @Size(max = 50)
     @NotNull
@@ -25,6 +24,15 @@ public class SensorMonitorDTO {
     private OffsetDateTime lastReadingTime;
 
     @Size(max = 50)
+    @NotNull
     private String lastReadingValue;
-    private OffsetDateTime lastDetectionTime;
+
+    private OffsetDateTime recentActivityTime;
+
+    @Size(max = 50)
+    @NotNull
+    private String eventType;
+
+    @Size(max = 255)
+    private String eventDescription;
 }
