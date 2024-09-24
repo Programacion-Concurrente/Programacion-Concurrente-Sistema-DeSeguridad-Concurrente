@@ -80,15 +80,19 @@ public class EventoService {
 
     private Evento mapToEntity(final EventoDTO eventoDTO, final Evento evento) {
         evento.setNivelCriticidad(eventoDTO.getNivelCriticidad());
-        final SensorTemperatura eventos = eventoDTO.getEventos() == null ? null : sensorTemperaturaRepository.findById(eventoDTO.getEventos())
-                .orElseThrow(() -> new NotFoundException("eventos not found"));
-        evento.setEventos(eventos);
-        final SensorMovimiento eventoss = eventoDTO.getEventoss() == null ? null : sensorMovimientoRepository.findById(eventoDTO.getEventoss())
-                .orElseThrow(() -> new NotFoundException("eventoss not found"));
-        evento.setEventoss(eventoss);
-        final SensorAcceso eventosss = eventoDTO.getEventosss() == null ? null : sensorAccesoRepository.findById(eventoDTO.getEventosss())
-                .orElseThrow(() -> new NotFoundException("eventosss not found"));
-        evento.setEventosss(eventosss);
+
+        final SensorTemperatura sensorTemperatura = eventoDTO.getEventos() == null ? null : sensorTemperaturaRepository.findById(eventoDTO.getEventos())
+            .orElseThrow(() -> new NotFoundException("SensorTemperatura not found"));
+        evento.setSensorTemperatura(sensorTemperatura);
+
+        final SensorMovimiento sensorMovimiento = eventoDTO.getEventoss() == null ? null : sensorMovimientoRepository.findById(eventoDTO.getEventoss())
+            .orElseThrow(() -> new NotFoundException("SensorMovimiento not found"));
+        evento.setSensorMovimiento(sensorMovimiento);
+
+        final SensorAcceso sensorAcceso = eventoDTO.getEventosss() == null ? null : sensorAccesoRepository.findById(eventoDTO.getEventosss())
+            .orElseThrow(() -> new NotFoundException("SensorAcceso not found"));
+        evento.setSensorAcceso(sensorAcceso);
+
         return evento;
     }
 
