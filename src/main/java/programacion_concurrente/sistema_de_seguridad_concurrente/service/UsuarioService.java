@@ -82,17 +82,19 @@ public class UsuarioService {
         usuarioDTO.setUsuarioo(usuario.getUsuarioo() == null ? null : usuario.getUsuarioo().getIdRol());
         return usuarioDTO;
     }
-
     private Usuario mapToEntity(final UsuarioDTO usuarioDTO, final Usuario usuario) {
         usuario.setNombre(usuarioDTO.getNombre());
         usuario.setEmail(usuarioDTO.getEmail());
         usuario.setActivo(usuarioDTO.getActivo());
-        final Credenciales usuario = usuarioDTO.getUsuario() == null ? null : credencialesRepository.findById(usuarioDTO.getUsuario())
-                .orElseThrow(() -> new NotFoundException("usuario not found"));
-        usuario.setUsuario(usuario);
-        final Rol usuarioo = usuarioDTO.getUsuarioo() == null ? null : rolRepository.findById(usuarioDTO.getUsuarioo())
-                .orElseThrow(() -> new NotFoundException("usuarioo not found"));
-        usuario.setUsuarioo(usuarioo);
+
+        final Credenciales credenciales = usuarioDTO.getUsuario() == null ? null : credencialesRepository.findById(usuarioDTO.getUsuario())
+            .orElseThrow(() -> new NotFoundException("usuario not found"));
+        usuario.setUsuario(credenciales);
+
+        final Rol rol = usuarioDTO.getUsuarioo() == null ? null : rolRepository.findById(usuarioDTO.getUsuarioo())
+            .orElseThrow(() -> new NotFoundException("usuarioo not found"));
+        usuario.setUsuarioo(rol);
+
         return usuario;
     }
 

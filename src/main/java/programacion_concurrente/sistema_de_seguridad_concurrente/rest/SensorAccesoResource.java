@@ -83,5 +83,4 @@ public class SensorAccesoResource {
                 .stream()
                 .collect(CustomCollectors.toSortedMap(Usuario::getIdUsuario, Usuario::getNombre)));
     }
-
 }

@@ -1,0 +1,9 @@
+package programacion_concurrente.sistema_de_seguridad_concurrente.config;
+
+import programacion_concurrente.sistema_de_seguridad_concurrente.domain.SensorTemperatura;
+import programacion_concurrente.sistema_de_seguridad_concurrente.repos.SensorAccesoRepository;
+
+public class PantallaDashboard {
+SensorAccesoRepository sensorAccesoRepository;
+SensorTemperatura sensorTemperatura;
+}
