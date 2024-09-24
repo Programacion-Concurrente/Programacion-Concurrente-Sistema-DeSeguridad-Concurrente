@@ -82,7 +82,6 @@ public class UsuarioService {
         usuarioDTO.setUsuarioo(usuario.getUsuarioo() == null ? null : usuario.getUsuarioo().getIdRol());
         return usuarioDTO;
     }
-
     private Usuario mapToEntity(final UsuarioDTO usuarioDTO, final Usuario usuario) {
         usuario.setNombre(usuarioDTO.getNombre());
         usuario.setEmail(usuarioDTO.getEmail());
@@ -92,9 +91,9 @@ public class UsuarioService {
             .orElseThrow(() -> new NotFoundException("usuario not found"));
         usuario.setUsuario(credenciales);
 
-        final Rol usuarioo = usuarioDTO.getUsuarioo() == null ? null : rolRepository.findById(usuarioDTO.getUsuarioo())
+        final Rol rol = usuarioDTO.getUsuarioo() == null ? null : rolRepository.findById(usuarioDTO.getUsuarioo())
             .orElseThrow(() -> new NotFoundException("usuarioo not found"));
-        usuario.setUsuarioo(usuarioo);
+        usuario.setUsuarioo(rol);
 
         return usuario;
     }

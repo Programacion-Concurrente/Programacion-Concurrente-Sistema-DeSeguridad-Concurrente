@@ -6,8 +6,12 @@ import programacion_concurrente.sistema_de_seguridad_concurrente.domain.SensorAc
 import programacion_concurrente.sistema_de_seguridad_concurrente.domain.SensorMovimiento;
 import programacion_concurrente.sistema_de_seguridad_concurrente.domain.SensorTemperatura;
 
+import java.util.List;
+
 
 public interface EventoRepository extends JpaRepository<Evento, Integer> {
+
+    List<Evento> findByTipo(String tipoEvento);
 
     Evento findFirstByEventos(SensorTemperatura sensorTemperatura);
 
@@ -15,4 +19,5 @@ public interface EventoRepository extends JpaRepository<Evento, Integer> {
 
     Evento findFirstByEventosss(SensorAcceso sensorAcceso);
 
+    List<Evento> findByTipoEvento(String tipo);
 }
