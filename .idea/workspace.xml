@@ -5,35 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63d9a159-3c29-413c-bf01-f8223ec2473e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/controller/AjustesNotificacionesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/controller/ConfiguracionSistemaControllerNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/controller/EventoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/controller/SistemaAccesoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/controller/UsuarioAutorizadoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/AjustesNotificaciones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/ConfiguracionSistema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/SistemaAcceso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/UsuarioAutorizado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/repos/AjustesNotificacionesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/repos/ConfiguracionSistemaRepositoryNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/repos/SistemaAccesoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/repos/UsuarioAutorizadoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/AjustesNotificacionesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/ConfiguracionSistemaServiceNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/SistemaAccesoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/UsuarioAutorizadoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaDashboardSeguridad/DashboardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/model/DashboardDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaDashboardSeguridad/DashboardResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/rest/DashboardResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaDashboardSeguridad/DashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/DashboardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaDashboardSeguridad/PantallaDashBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaMonitoreoSensores/SensorMonitorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/model/SensorMonitorDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaMonitoreoSensores/SensorMonitorResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/rest/SensorMonitorResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaMonitoreoSensores/SensorMonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/SensorMonitorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/config/PantallaDashboard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/Evento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/repos/EventoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/repos/EventoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/EventoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/EventoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +19,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -83,7 +55,7 @@
     "Spring Boot.SistemaDeSeguridadConcurrenteApplication.executor": "Run",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "BackEnd",
+    "git-widget-placeholder": "Merging BackEnd",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Albeto/Documents/GitHub/Programacion-Concurrente-Sistema-DeSeguridad-Concurrente/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaDashboard",
@@ -93,7 +65,6 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.Angular CLI Server.executor": "Run",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "ts.external.directory.path": "C:\\Users\\Albeto\\Documents\\GitHub\\Programacion-Concurrente-Sistema-DeSeguridad-Concurrente\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -102,11 +73,8 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Albeto\Documents\GitHub\Programacion-Concurrente-Sistema-DeSeguridad-Concurrente\src\main\java\programacion_concurrente\sistema_de_seguridad_concurrente\BackEnd\PantallaDashboard" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="programacion_concurrente.sistema_de_seguridad_concurrente.config" />
-    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SistemaDeSeguridadConcurrenteApplication">
+  <component name="RunManager" selected="JavaScript Debug.Angular Application">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
@@ -152,7 +120,7 @@
       <workItem from="1727074022522" duration="23000" />
       <workItem from="1727081182707" duration="1862000" />
       <workItem from="1727112620348" duration="9793000" />
-      <workItem from="1727190670335" duration="5434000" />
+      <workItem from="1727190670335" duration="769000" />
     </task>
     <servers />
   </component>
