@@ -1,16 +1,10 @@
 package programacion_concurrente.sistema_de_seguridad_concurrente.domain;
+import jakarta.persistence.*;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import java.time.OffsetDateTime;
 import java.util.Set;
 import lombok.Getter;
 import lombok.Setter;
-
 
 @Entity
 @Table(name = "SensorAccesoes")
@@ -31,4 +25,7 @@ public class SensorAcceso extends Sensor {
     @JoinColumn(name = "sens_id", nullable = false)
     private Usuario sens;
 
+    public OffsetDateTime getLastModifiedDate() {
+        return this.getLastUpdated();
+    }
 }
