@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63d9a159-3c29-413c-bf01-f8223ec2473e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/NotificacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/NotificacionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/access-control/access-control.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/access-control/access-control.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/settings/settings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/settings/settings.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,7 @@
       <recent name="C:\Users\samue\Repositorios\Programacion-Concurrente-Sistema-DeSeguridad-Concurrente\src\main\webapp\app" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server">
+  <component name="RunManager" selected="Spring Boot.SistemaDeSeguridadConcurrenteApplication">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
@@ -132,6 +128,7 @@
       <workItem from="1727126480690" duration="776000" />
       <workItem from="1727167847488" duration="1156000" />
       <workItem from="1727189758348" duration="1689000" />
+      <workItem from="1727192180986" duration="889000" />
     </task>
     <servers />
   </component>
