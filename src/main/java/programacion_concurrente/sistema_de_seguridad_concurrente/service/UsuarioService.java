@@ -87,7 +87,7 @@ public class UsuarioService {
         usuario.setNombre(usuarioDTO.getNombre());
         usuario.setEmail(usuarioDTO.getEmail());
         usuario.setActivo(usuarioDTO.getActivo());
-        final Credenciales usuario = usuarioDTO.getUsuario() == null ? null : credencialesRepository.findById(usuarioDTO.getUsuario())
+        final Credenciales usuarioE = usuarioDTO.getUsuario() == null ? null : credencialesRepository.findById(usuarioDTO.getUsuario())
                 .orElseThrow(() -> new NotFoundException("usuario not found"));
         usuario.setUsuario(usuario);
         final Rol usuarioo = usuarioDTO.getUsuarioo() == null ? null : rolRepository.findById(usuarioDTO.getUsuarioo())

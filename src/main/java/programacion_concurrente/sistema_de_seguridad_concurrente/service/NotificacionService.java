@@ -73,5 +73,4 @@ public class NotificacionService {
     public boolean notificacionExists(final Integer idEvento) {
         return notificacionRepository.existsByNotificacionIdEvento(idEvento);
     }
-
 }
