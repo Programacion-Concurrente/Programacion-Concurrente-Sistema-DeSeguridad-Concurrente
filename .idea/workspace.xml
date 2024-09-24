@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63d9a159-3c29-413c-bf01-f8223ec2473e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaDashboardSeguridad/DashboardDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaDashboardSeguridad/DashboardResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaDashboardSeguridad/DashboardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaDashboardSeguridad/PantallaDashBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaMonitoreoSensores/SensorMonitorDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaMonitoreoSensores/SensorMonitorResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/BackEnd/PantallaMonitoreoSensores/SensorMonitorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/config/PantallaDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/Evento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/SensorAcceso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/SensorAcceso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/SensorMovimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/domain/SensorMovimiento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/model/EventoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/model/EventoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/model/SensorAccesoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/model/SensorAccesoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/model/SensorMovimientoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/model/SensorMovimientoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/rest/SensorAccesoResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/rest/SensorAccesoResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/NotificacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/NotificacionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/UsuarioService.java" afterDir="false" />
-    </list>
+    <list default="true" id="63d9a159-3c29-413c-bf01-f8223ec2473e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +117,7 @@
       <workItem from="1727074022522" duration="23000" />
       <workItem from="1727081182707" duration="1862000" />
       <workItem from="1727112620348" duration="9793000" />
-      <workItem from="1727190670335" duration="265000" />
+      <workItem from="1727190670335" duration="769000" />
     </task>
     <servers />
   </component>
