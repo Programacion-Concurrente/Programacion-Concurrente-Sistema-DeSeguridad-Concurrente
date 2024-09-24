@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63d9a159-3c29-413c-bf01-f8223ec2473e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/NotificacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/NotificacionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programacion_concurrente/sistema_de_seguridad_concurrente/service/UsuarioService.java" afterDir="false" />
-    </list>
+    <list default="true" id="63d9a159-3c29-413c-bf01-f8223ec2473e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +42,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.SistemaDeSeguridadConcurrenteApplication.executor": "Run",
     "git-widget-placeholder": "BBDD/Docker",
@@ -111,7 +111,7 @@
       <workItem from="1727032327217" duration="29000" />
       <workItem from="1727074022522" duration="23000" />
       <workItem from="1727081182707" duration="1862000" />
-      <workItem from="1727172291135" duration="7141000" />
+      <workItem from="1727172291135" duration="7436000" />
     </task>
     <servers />
   </component>
