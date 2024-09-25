@@ -15,21 +15,6 @@
                     </select>
                 </div>
 
-                <!-- Límite de Temperatura -->
-                <div class="form-group mt-3">
-                    <label for="temperature-threshold">Límite de Temperatura</label>
-                    <input type="number" id="temperature-threshold" class="form-control" value="30">
-                </div>
-
-                <!-- Nivel de Sensibilidad de Movimiento -->
-                <div class="form-group mt-3">
-                    <label for="motion-sensitivity">Sensibilidad del Sensor de Movimiento</label>
-                    <select id="motion-sensitivity" class="form-control">
-                        <option>Baja</option>
-                        <option>Media</option>
-                        <option>Alta</option>
-                    </select>
-                </div>
 
                 <!-- Hora de Activación Programada -->
                 <div class="form-group mt-3">
@@ -63,49 +48,6 @@
                         <option>Activadas</option>
                         <option>Desactivadas</option>
                     </select>
-                </div>
-
-                <!-- Frecuencia de las Notificaciones -->
-                <div class="form-group mt-3">
-                    <label for="notification-frequency">Frecuencia de Notificaciones</label>
-                    <select id="notification-frequency" class="form-control">
-                        <option>Cada 5 minutos</option>
-                        <option>Cada 15 minutos</option>
-                        <option>Cada 30 minutos</option>
-                        <option>Cada hora</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="btn btn-primary mt-4">Guardar Cambios</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Ajustes de Acceso -->
-    <div class="card mb-4">
-        <div class="card-header">Ajustes de Acceso</div>
-        <div class="card-body">
-            <form>
-                <!-- Nivel de Acceso de Administrador -->
-                <div class="form-group">
-                    <label for="admin-access-level">Nivel de Acceso del Administrador</label>
-                    <select id="admin-access-level" class="form-control">
-                        <option>Básico</option>
-                        <option>Avanzado</option>
-                        <option>Completo</option>
-                    </select>
-                </div>
-
-                <!-- Tiempo de Bloqueo tras Fallo -->
-                <div class="form-group mt-3">
-                    <label for="lockout-time">Tiempo de Bloqueo tras Intento Fallido</label>
-                    <input type="number" id="lockout-time" class="form-control" value="10">
-                </div>
-
-                <!-- Cantidad Máxima de Intentos Fallidos -->
-                <div class="form-group mt-3">
-                    <label for="max-failed-attempts">Máximo de Intentos Fallidos</label>
-                    <input type="number" id="max-failed-attempts" class="form-control" value="3">
                 </div>
 
                 <button type="submit" class="btn btn-primary mt-4">Guardar Cambios</button>
