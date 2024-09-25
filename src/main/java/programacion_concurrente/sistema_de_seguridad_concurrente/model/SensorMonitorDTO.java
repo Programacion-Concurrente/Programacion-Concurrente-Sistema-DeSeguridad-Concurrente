@@ -1,32 +1,30 @@
 package programacion_concurrente.sistema_de_seguridad_concurrente.model;
 
+import java.time.OffsetDateTime;
+
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.OffsetDateTime;
-
-
 @Getter
 @Setter
-public class SensorAccesoDTO {
+public class SensorMonitorDTO {
 
+    @NotNull
     private Integer idSensor;
 
-    @NotNull
     @Size(max = 50)
-    private String nombre;
-
-    @Size(max = 100)
-    private String ubicacion;
-
     @NotNull
-    @Size(max = 255)
-    private String respuesta;
+    private String sensorType;
 
+    @Size(max = 50)
     @NotNull
-    private Integer sens;
+    private String status;
 
+    private OffsetDateTime lastReadingTime;
 
+    @Size(max = 50)
+    private String lastReadingValue;
+    private OffsetDateTime lastDetectionTime;
 }

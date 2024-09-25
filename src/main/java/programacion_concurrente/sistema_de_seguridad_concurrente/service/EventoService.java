@@ -28,10 +28,10 @@ public class EventoService {
     private final NotificacionRepository notificacionRepository;
 
     public EventoService(final EventoRepository eventoRepository,
-            final SensorTemperaturaRepository sensorTemperaturaRepository,
-            final SensorMovimientoRepository sensorMovimientoRepository,
-            final SensorAccesoRepository sensorAccesoRepository,
-            final NotificacionRepository notificacionRepository) {
+                         final SensorTemperaturaRepository sensorTemperaturaRepository,
+                         final SensorMovimientoRepository sensorMovimientoRepository,
+                         final SensorAccesoRepository sensorAccesoRepository,
+                         final NotificacionRepository notificacionRepository) {
         this.eventoRepository = eventoRepository;
         this.sensorTemperaturaRepository = sensorTemperaturaRepository;
         this.sensorMovimientoRepository = sensorMovimientoRepository;
@@ -42,14 +42,14 @@ public class EventoService {
     public List<EventoDTO> findAll() {
         final List<Evento> eventoes = eventoRepository.findAll(Sort.by("idEvento"));
         return eventoes.stream()
-                .map(evento -> mapToDTO(evento, new EventoDTO()))
-                .toList();
+            .map(evento -> mapToDTO(evento, new EventoDTO()))
+            .toList();
     }
 
     public EventoDTO get(final Integer idEvento) {
         return eventoRepository.findById(idEvento)
-                .map(evento -> mapToDTO(evento, new EventoDTO()))
-                .orElseThrow(NotFoundException::new);
+            .map(evento -> mapToDTO(evento, new EventoDTO()))
+            .orElseThrow(NotFoundException::new);
     }
 
     public Integer create(final EventoDTO eventoDTO) {
@@ -60,7 +60,7 @@ public class EventoService {
 
     public void update(final Integer idEvento, final EventoDTO eventoDTO) {
         final Evento evento = eventoRepository.findById(idEvento)
-                .orElseThrow(NotFoundException::new);
+            .orElseThrow(NotFoundException::new);
         mapToEntity(eventoDTO, evento);
         eventoRepository.save(evento);
     }
@@ -80,22 +80,26 @@ public class EventoService {
 
     private Evento mapToEntity(final EventoDTO eventoDTO, final Evento evento) {
         evento.setNivelCriticidad(eventoDTO.getNivelCriticidad());
-        final SensorTemperatura eventos = eventoDTO.getEventos() == null ? null : sensorTemperaturaRepository.findById(eventoDTO.getEventos())
-                .orElseThrow(() -> new NotFoundException("eventos not found"));
-        evento.setEventos(eventos);
-        final SensorMovimiento eventoss = eventoDTO.getEventoss() == null ? null : sensorMovimientoRepository.findById(eventoDTO.getEventoss())
-                .orElseThrow(() -> new NotFoundException("eventoss not found"));
-        evento.setEventoss(eventoss);
-        final SensorAcceso eventosss = eventoDTO.getEventosss() == null ? null : sensorAccesoRepository.findById(eventoDTO.getEventosss())
-                .orElseThrow(() -> new NotFoundException("eventosss not found"));
-        evento.setEventosss(eventosss);
+
+        final SensorTemperatura sensorTemperatura = eventoDTO.getEventos() == null ? null : sensorTemperaturaRepository.findById(eventoDTO.getEventos())
+            .orElseThrow(() -> new NotFoundException("SensorTemperatura not found"));
+        evento.setSensorTemperatura(sensorTemperatura);
+
+        final SensorMovimiento sensorMovimiento = eventoDTO.getEventoss() == null ? null : sensorMovimientoRepository.findById(eventoDTO.getEventoss())
+            .orElseThrow(() -> new NotFoundException("SensorMovimiento not found"));
+        evento.setSensorMovimiento(sensorMovimiento);
+
+        final SensorAcceso sensorAcceso = eventoDTO.getEventosss() == null ? null : sensorAccesoRepository.findById(eventoDTO.getEventosss())
+            .orElseThrow(() -> new NotFoundException("SensorAcceso not found"));
+        evento.setSensorAcceso(sensorAcceso);
+
         return evento;
     }
 
     public ReferencedWarning getReferencedWarning(final Integer idEvento) {
         final ReferencedWarning referencedWarning = new ReferencedWarning();
         final Evento evento = eventoRepository.findById(idEvento)
-                .orElseThrow(NotFoundException::new);
+            .orElseThrow(NotFoundException::new);
         final Notificacion notificacionNotificacion = notificacionRepository.findFirstByNotificacion(evento);
         if (notificacionNotificacion != null) {
             referencedWarning.setKey("evento.notificacion.notificacion.referenced");
@@ -105,4 +109,11 @@ public class EventoService {
         return null;
     }
 
+    public List<EventoDTO> getEventosByTipo(String tipo) {
+        final List<Evento> eventos = eventoRepository.findByTipoEvento(tipo);
+        return eventos.stream()
+            .map(evento -> mapToDTO(evento, new EventoDTO()))
+            .toList();
+    }
 }
+
