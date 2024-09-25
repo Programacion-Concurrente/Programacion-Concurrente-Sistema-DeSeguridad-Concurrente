@@ -83,7 +83,7 @@ public class SensorAccesoService {
         final ReferencedWarning referencedWarning = new ReferencedWarning();
         final SensorAcceso sensorAcceso = sensorAccesoRepository.findById(idSensor)
                 .orElseThrow(NotFoundException::new);
-        final Evento eventosssEvento = eventoRepository.findFirstByEventosss(sensorAcceso);
+        final Evento eventosssEvento = eventoRepository.findFirstBysensorAcceso(sensorAcceso);
         if (eventosssEvento != null) {
             referencedWarning.setKey("sensorAcceso.evento.eventosss.referenced");
             referencedWarning.addParam(eventosssEvento.getIdEvento());
