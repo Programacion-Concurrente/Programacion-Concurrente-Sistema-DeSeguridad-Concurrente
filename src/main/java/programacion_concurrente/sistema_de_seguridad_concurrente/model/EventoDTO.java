@@ -29,13 +29,13 @@ public class EventoDTO {
     private String descripcion;
 
     @NotNull
-    private Integer eventos;
+    private Integer sensorTemperatura;
 
     @NotNull
-    private Integer eventoss;
+    private Integer sensorMovimiento;
 
     @NotNull
-    private Integer eventosss;
+    private Integer sensorAcceso;
 
 }
 
