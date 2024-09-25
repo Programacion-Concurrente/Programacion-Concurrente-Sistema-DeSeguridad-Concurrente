@@ -1,53 +1,61 @@
 package programacion_concurrente.sistema_de_seguridad_concurrente.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-import programacion_concurrente.sistema_de_seguridad_concurrente.model.SensorMonitorDTO;
+import programacion_concurrente.sistema_de_seguridad_concurrente.domain.SensorAcceso;
+import programacion_concurrente.sistema_de_seguridad_concurrente.domain.SensorMovimiento;
+import programacion_concurrente.sistema_de_seguridad_concurrente.domain.SensorTemperatura;
+import programacion_concurrente.sistema_de_seguridad_concurrente.repos.SensorAccesoRepository;
 import programacion_concurrente.sistema_de_seguridad_concurrente.repos.SensorMovimientoRepository;
 import programacion_concurrente.sistema_de_seguridad_concurrente.repos.SensorTemperaturaRepository;
-
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Random;
+import java.util.concurrent.CompletableFuture;
+
 
 @Service
 public class SensorMonitorService {
 
     private final SensorMovimientoRepository sensorMovimientoRepository;
     private final SensorTemperaturaRepository sensorTemperaturaRepository;
+    private final SensorAccesoRepository sensorAccesoRepository;
 
-    @Autowired
     public SensorMonitorService(SensorMovimientoRepository sensorMovimientoRepository,
-                                SensorTemperaturaRepository sensorTemperaturaRepository) {
+                                SensorTemperaturaRepository sensorTemperaturaRepository,
+                                SensorAccesoRepository sensorAccesoRepository) {
         this.sensorMovimientoRepository = sensorMovimientoRepository;
         this.sensorTemperaturaRepository = sensorTemperaturaRepository;
+        this.sensorAccesoRepository = sensorAccesoRepository;
     }
 
-    public List<SensorMonitorDTO> getSensorMonitorData() {
-        List<SensorMonitorDTO> movimientoData = sensorMovimientoRepository.findAll().stream()
-            .map(sensor -> {
-                SensorMonitorDTO dto = new SensorMonitorDTO();
-                dto.setIdSensor(sensor.getIdSensor());
-                dto.setSensorType("Movimiento");
-                dto.setStatus("Activo"); // Assuming status is always "Activo"
-                dto.setLastReadingTime(sensor.getLastModifiedDate());
-                dto.setLastReadingValue("Movimiento detectado");
-                dto.setLastDetectionTime(sensor.getLastModifiedDate());
-                return dto;
-            }).collect(Collectors.toList());
+    @Async("taskExecutor")
+    public CompletableFuture<Void> generateRandomEvents() {
+        List<SensorMovimiento> sensorMovimientos = sensorMovimientoRepository.findAll();
+        List<SensorTemperatura> sensorTemperaturas = sensorTemperaturaRepository.findAll();
+        List<SensorAcceso> sensorAccesos = sensorAccesoRepository.findAll();
+        Random random = new Random();
 
-        List<SensorMonitorDTO> temperaturaData = sensorTemperaturaRepository.findAll().stream()
-            .map(sensor -> {
-                SensorMonitorDTO dto = new SensorMonitorDTO();
-                dto.setIdSensor(sensor.getIdSensor());
-                dto.setSensorType("Temperatura");
-                dto.setStatus(sensor.getTemperatura() + "°C");
-                dto.setLastReadingTime(sensor.getLastUpdated());
-                dto.setLastReadingValue(sensor.getTemperatura() + "°C");
-                dto.setLastDetectionTime(sensor.getLastUpdated());
-                return dto;
-            }).collect(Collectors.toList());
+        sensorMovimientos.forEach(sensor -> {
+            int randomEventCount = random.nextInt(10) + 1;
+            for (int i = 0; i < randomEventCount; i++) {
+                System.out.println("Sensor Movimiento: " + sensor.getNombre() + " - Evento: " + i);
+            }
+        });
 
-        movimientoData.addAll(temperaturaData);
-        return movimientoData;
+        sensorTemperaturas.forEach(sensor -> {
+            int randomEventCount = random.nextInt(10) + 1;
+            for (int i = 0; i < randomEventCount; i++) {
+                System.out.println("Sensor Temperatura: " + sensor.getNombre() + " - Evento: " + i);
+            }
+        });
+
+        sensorAccesos.forEach(sensor -> {
+            int randomEventCount = random.nextInt(10) + 1;
+            for (int i = 0; i < randomEventCount; i++) {
+                System.out.println("Sensor Acceso: " + sensor.getNombre() + " - Evento: " + i);
+            }
+        });
+
+        return CompletableFuture.completedFuture(null);
     }
 }
