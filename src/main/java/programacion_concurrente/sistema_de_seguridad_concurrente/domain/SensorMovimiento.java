@@ -8,7 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "SensorMovimientoes")
+@Table(name = "sensorMovimiento")
 @Getter
 @Setter
 public class SensorMovimiento extends Sensor {
@@ -16,7 +16,7 @@ public class SensorMovimiento extends Sensor {
     @Column(length = 100)
     private String ubicacion;
 
-    @OneToMany(mappedBy = "eventoss")
+    @OneToMany(mappedBy = "sensorMovimiento")
     private Set<Evento> sensorMovimiento;
 
     @ManyToOne(fetch = FetchType.LAZY)
