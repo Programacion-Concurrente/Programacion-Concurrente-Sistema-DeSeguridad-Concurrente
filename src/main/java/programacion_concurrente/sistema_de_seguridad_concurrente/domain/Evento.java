@@ -17,28 +17,38 @@ public class Evento {
     private Integer idEvento;
 
     @Column(nullable = false)
+    private String tipoEvento;
+
+    @Column(nullable = false)
     private String nivelCriticidad;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "eventos_id")
-    private SensorAcceso eventos;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "eventoss_id")
-    private SensorMovimiento eventoss;
+    @JoinColumn(name = "sensor_acceso_id")
+    private SensorAcceso sensorAcceso;
+
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "eventosss_id")
-    private SensorTemperatura eventosss;
+    @JoinColumn(name = "sensor_movimiento_id")
+    private SensorMovimiento sensorMovimiento;
+
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "sensor_temperatura_id")
+    private SensorTemperatura sensorTemperatura;
 
 
     @Column(nullable = false)
     private OffsetDateTime fechaHora;
 
-    @Column(nullable = false)
-    private String tipoEvento;
 
     @Column(nullable = false)
     private String descripcion;
 
+
+    @OneToOne
+    @JoinColumn(name = "notificacion_id")
+    private Notificacion notificacion;
+
 }
+
