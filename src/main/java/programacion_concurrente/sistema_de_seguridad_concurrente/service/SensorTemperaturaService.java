@@ -83,7 +83,7 @@ public class SensorTemperaturaService {
         final ReferencedWarning referencedWarning = new ReferencedWarning();
         final SensorTemperatura sensorTemperatura = sensorTemperaturaRepository.findById(idSensor)
                 .orElseThrow(NotFoundException::new);
-        final Evento eventosEvento = eventoRepository.findFirstByEventos(sensorTemperatura);
+        final Evento eventosEvento = eventoRepository.findFirstBysensorTemperatura(sensorTemperatura);
         if (eventosEvento != null) {
             referencedWarning.setKey("sensorTemperatura.evento.eventos.referenced");
             referencedWarning.addParam(eventosEvento.getIdEvento());
