@@ -1,4 +1,5 @@
 package programacion_concurrente.sistema_de_seguridad_concurrente.domain;
+
 import jakarta.persistence.*;
 
 import java.time.OffsetDateTime;
@@ -18,7 +19,7 @@ public class SensorAcceso extends Sensor {
     @Column(nullable = false)
     private String respuesta;
 
-    @OneToMany(mappedBy = "eventosss")
+    @OneToMany(mappedBy = "sensorAcceso")
     private Set<Evento> sensorAcceso;
 
     @ManyToOne(fetch = FetchType.LAZY)
