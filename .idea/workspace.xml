@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="63d9a159-3c29-413c-bf01-f8223ec2473e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/_custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +33,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -47,36 +52,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.Angular Application.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.SistemaDeSeguridadConcurrenteApplication.executor": "Run",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "Frontend",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Albeto/Documents/GitHub/ProgramacionDirigidaPorEventos_AplicacionGestionResiduos_Jaime_Alberto_Juanma_Nico_Mario",
+    "last_opened_file_path": "C:/Users/samue/Repositorios/Programacion-Concurrente-Sistema-DeSeguridad-Concurrente/src/main/webapp/app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.Angular CLI Server.executor": "Run",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.sourceCode.HSQLDB",
-    "ts.external.directory.path": "C:\\Users\\Albeto\\Documents\\GitHub\\Programacion-Concurrente-Sistema-DeSeguridad-Concurrente\\node_modules\\typescript\\lib",
+    "settings.editor.selected.configurable": "Docker",
+    "ts.external.directory.path": "C:\\Users\\samue\\Repositorios\\Programacion-Concurrente-Sistema-DeSeguridad-Concurrente\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\samue\Repositorios\Programacion-Concurrente-Sistema-DeSeguridad-Concurrente\src\main\webapp\app" />
       <recent name="C:\Users\Albeto\Documents\GitHub\Programacion-Concurrente-Sistema-DeSeguridad-Concurrente\src\main\java\programacion_concurrente\sistema_de_seguridad_concurrente\BackEnd\PantallaDashboard" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Angular Application">
+  <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
@@ -145,6 +149,18 @@
       <workItem from="1727032327217" duration="29000" />
       <workItem from="1727074022522" duration="23000" />
       <workItem from="1727081182707" duration="1862000" />
+      <workItem from="1727085976103" duration="895000" />
+      <workItem from="1727086895601" duration="28000" />
+      <workItem from="1727125153535" duration="1362000" />
+      <workItem from="1727086895601" duration="1136000" />
+      <workItem from="1727099795895" duration="6140000" />
+      <workItem from="1727107412357" duration="780000" />
+      <workItem from="1727110533685" duration="2366000" />
+      <workItem from="1727117816792" duration="43000" />
+      <workItem from="1727126480690" duration="776000" />
+      <workItem from="1727167847488" duration="1156000" />
+      <workItem from="1727189758348" duration="1689000" />
+      <workItem from="1727192180986" duration="3858000" />
       <workItem from="1727112620348" duration="9793000" />
       <workItem from="1727190670335" duration="769000" />
       <workItem from="1727172291135" duration="7436000" />
