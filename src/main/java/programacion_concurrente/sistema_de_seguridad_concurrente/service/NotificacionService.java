@@ -62,16 +62,15 @@ public class NotificacionService {
     }
 
     private Notificacion mapToEntity(final NotificacionDTO notificacionDTO,
-            final Notificacion notificacion) {
+                                     final Notificacion notificacion) {
         notificacion.setMensage(notificacionDTO.getMensage());
-        final Evento notificacion = notificacionDTO.getNotificacion() == null ? null : eventoRepository.findById(notificacionDTO.getNotificacion())
-                .orElseThrow(() -> new NotFoundException("notificacion not found"));
-        notificacion.setNotificacion(notificacion);
+        final Evento evento = notificacionDTO.getNotificacion() == null ? null : eventoRepository.findById(notificacionDTO.getNotificacion())
+            .orElseThrow(() -> new NotFoundException("notificacion not found"));
+        notificacion.setNotificacion(evento);
         return notificacion;
     }
 
     public boolean notificacionExists(final Integer idEvento) {
         return notificacionRepository.existsByNotificacionIdEvento(idEvento);
     }
-
 }
