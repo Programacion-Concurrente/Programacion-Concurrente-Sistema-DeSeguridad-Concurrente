@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="63d9a159-3c29-413c-bf01-f8223ec2473e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/_custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles.scss" afterDir="false" />
+>>>>>>> 65ca49ad3f003e321867352c90f56f68c067c68c
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +33,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -42,6 +50,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JavaScript Debug.Angular Application.executor": "Run",
@@ -58,6 +67,30 @@
     "npm.Angular CLI Server.executor": "Run",
     "ts.external.directory.path": "C:\\Users\\samue\\Repositorios\\Programacion-Concurrente-Sistema-DeSeguridad-Concurrente\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.Angular Application.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SistemaDeSeguridadConcurrenteApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Frontend&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/samue/Repositorios/Programacion-Concurrente-Sistema-DeSeguridad-Concurrente/src/main/webapp/app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.Angular CLI Server.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\samue\\Repositorios\\Programacion-Concurrente-Sistema-DeSeguridad-Concurrente\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> 65ca49ad3f003e321867352c90f56f68c067c68c
   }
 }]]></component>
   <component name="RecentsManager">
@@ -111,8 +144,20 @@
       <workItem from="1727074022522" duration="23000" />
       <workItem from="1727081182707" duration="1862000" />
       <workItem from="1727085976103" duration="895000" />
+<<<<<<< HEAD
       <workItem from="1727086895601" duration="28000" />
       <workItem from="1727125153535" duration="1362000" />
+=======
+      <workItem from="1727086895601" duration="1136000" />
+      <workItem from="1727099795895" duration="6140000" />
+      <workItem from="1727107412357" duration="780000" />
+      <workItem from="1727110533685" duration="2366000" />
+      <workItem from="1727117816792" duration="43000" />
+      <workItem from="1727126480690" duration="776000" />
+      <workItem from="1727167847488" duration="1156000" />
+      <workItem from="1727189758348" duration="1689000" />
+      <workItem from="1727192180986" duration="3858000" />
+>>>>>>> 65ca49ad3f003e321867352c90f56f68c067c68c
     </task>
     <servers />
   </component>
