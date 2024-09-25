@@ -11,13 +11,13 @@ import java.util.List;
 
 public interface EventoRepository extends JpaRepository<Evento, Integer> {
 
-    List<Evento> findByTipo(String tipoEvento);
+    //List<Evento> findByTipo(String tipoEvento);
 
-    Evento findFirstByEventos(SensorTemperatura sensorTemperatura);
+    Evento findFirstBysensorTemperatura(SensorTemperatura sensorTemperatura);
 
-    Evento findFirstByEventoss(SensorMovimiento sensorMovimiento);
+    Evento findFirstBysensorMovimiento(SensorMovimiento sensorMovimiento);
 
-    Evento findFirstByEventosss(SensorAcceso sensorAcceso);
+    Evento findFirstBysensorAcceso(SensorAcceso sensorAcceso);
 
-    List<Evento> findByTipoEvento(String tipo);
+    List<Evento> findByTipoEvento(String tipoEvento);
 }
