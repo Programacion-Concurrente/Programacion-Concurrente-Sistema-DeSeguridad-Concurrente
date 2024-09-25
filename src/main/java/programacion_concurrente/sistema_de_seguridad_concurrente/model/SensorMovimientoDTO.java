@@ -4,8 +4,10 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
+import programacion_concurrente.sistema_de_seguridad_concurrente.domain.Evento;
 
 import java.time.OffsetDateTime;
+import java.util.Set;
 
 
 @Getter
@@ -23,4 +25,7 @@ public class SensorMovimientoDTO {
 
     @NotNull
     private Integer sensior;
+
+    @NotNull
+    private Set<Evento> sensorMovimiento;
 }
