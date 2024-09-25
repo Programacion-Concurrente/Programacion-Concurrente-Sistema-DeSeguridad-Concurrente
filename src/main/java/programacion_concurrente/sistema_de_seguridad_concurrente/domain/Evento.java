@@ -31,17 +31,6 @@ public class Evento {
     @JoinColumn(name = "eventosss_id")
     private SensorTemperatura eventosss;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "sensor_temperatura_id")
-    private SensorTemperatura sensorTemperatura;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "sensor_movimiento_id")
-    private SensorMovimiento sensorMovimiento;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "sensor_acceso_id")
-    private SensorAcceso sensorAcceso;
 
     @Column(nullable = false)
     private OffsetDateTime fechaHora;
