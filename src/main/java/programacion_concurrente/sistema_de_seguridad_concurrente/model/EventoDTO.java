@@ -12,7 +12,6 @@ import java.time.OffsetDateTime;
 @Setter
 public class EventoDTO {
 
-    private String NivelCriticidadDTO;
 
     @NotNull
     private Integer idEvento;
