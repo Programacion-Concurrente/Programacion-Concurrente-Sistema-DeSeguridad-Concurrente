@@ -81,7 +81,7 @@ public class SensorMovimientoService {
         final ReferencedWarning referencedWarning = new ReferencedWarning();
         final SensorMovimiento sensorMovimiento = sensorMovimientoRepository.findById(idSensor)
                 .orElseThrow(NotFoundException::new);
-        final Evento eventossEvento = eventoRepository.findFirstByEventoss(sensorMovimiento);
+        final Evento eventossEvento = eventoRepository.findFirstBysensorMovimiento(sensorMovimiento);
         if (eventossEvento != null) {
             referencedWarning.setKey("sensorMovimiento.evento.eventoss.referenced");
             referencedWarning.addParam(eventossEvento.getIdEvento());
