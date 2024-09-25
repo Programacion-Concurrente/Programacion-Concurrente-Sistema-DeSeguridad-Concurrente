@@ -24,7 +24,7 @@ public class SensorTemperatura extends Sensor {
     @Column(nullable = false)
     private Integer temperatura;
 
-    @OneToMany(mappedBy = "eventos")
+    @OneToMany(mappedBy = "sensorTemperatura")
     private Set<Evento> sensorTemperatura;
 
     @ManyToOne(fetch = FetchType.LAZY)
