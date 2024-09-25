@@ -21,8 +21,8 @@ public class EventoController {
     }
 
     @GetMapping
-    public ResponseEntity<List<EventoDTO>> getEventosByTipo(@RequestParam String tipo) {
-        List<EventoDTO> eventos = eventoService.getEventosByTipo(tipo);
+    public ResponseEntity<List<EventoDTO>> getEventosByTipo(@RequestParam String tipoEvento) {
+        List<EventoDTO> eventos = eventoService.getEventosByTipo(tipoEvento);
         return ResponseEntity.ok(eventos);
     }
 
